@@ -30,9 +30,14 @@ h1 {
   font-size: 14.5px;
   color: #fff;
 }
-.btn_input_area button:hover {
-  border-color: #5697cf;
-  background-color: #5e9cd2;
+.btn_input_area .zeroclipboard-is-hover {
+  opacity: 0.8;
+}
+.btn_input_area .zeroclipboard-is-active {
+  opacity: 1.0;
+  border: 2px solid #428bca;
+  background-color: #fff;
+  color: #357ebd;
 }
 .btn_input_area label {
   position: relative;
