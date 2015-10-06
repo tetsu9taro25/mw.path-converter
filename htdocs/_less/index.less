@@ -35,6 +35,7 @@ h1 {
 
   .zeroclipboard-is-hover {
     opacity: 0.8;
+    filter: alpha(opacity=80);
   }
 
   .zeroclipboard-is-active {
@@ -46,9 +47,13 @@ h1 {
 
   label {
     position: relative;
+    display: inline-block;
 
     &:first-child {
       margin-right: 140px;
+    }
+    &:hover {
+      cursor: pointer;
     }
 
     input {
@@ -69,12 +74,16 @@ h1 {
           background-position: -153px 0;
         }
       }
+
+/*      &[name="choice"]:hover {
+        cursor: pointer;
+      }*/
     }
 
     .image_left_arrow {
       position: absolute;
       left: 50px;
-      top: -34px;
+      top: 0;
       display: block;
       background: url("/img/arrow.png") no-repeat -50px 0;
       width: 45px;
@@ -85,7 +94,7 @@ h1 {
     .image_right_arrow {
       position: absolute;
       left: 0;
-      top: -34px;
+      top: 0;
       display: block;
       background: url("/img/arrow.png") no-repeat -50px 0;
       width: 45px;
@@ -95,7 +104,7 @@ h1 {
     .image_mac {
       position: absolute;
       left: 0;
-      top: -37px;
+      top: -4px;
       display: block;
       background: url("/img/macintosh.png") no-repeat 0 0;
       width: 50px;
@@ -105,7 +114,7 @@ h1 {
     .image_win {
       position: absolute;
       left: 50px;
-      top: -34px;
+      top: 0;
       display: block;
       background: url("/img/windows.png") no-repeat 0 0;
       width: 50px;

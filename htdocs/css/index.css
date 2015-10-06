@@ -32,6 +32,7 @@ h1 {
 }
 .btn_input_area .zeroclipboard-is-hover {
   opacity: 0.8;
+  filter: alpha(opacity=80);
 }
 .btn_input_area .zeroclipboard-is-active {
   opacity: 1.0;
@@ -41,15 +42,22 @@ h1 {
 }
 .btn_input_area label {
   position: relative;
+  display: inline-block;
 }
 .btn_input_area label:first-child {
   margin-right: 140px;
+}
+.btn_input_area label:hover {
+  cursor: pointer;
 }
 .btn_input_area label input {
   opacity: 0;
   margin: 0;
   width: 100px;
   height: 50px;
+  /*      &[name="choice"]:hover {
+        cursor: pointer;
+      }*/
 }
 .btn_input_area label input:checked + .image_left_arrow {
   width: 50px;
@@ -64,7 +72,7 @@ h1 {
 .btn_input_area label .image_left_arrow {
   position: absolute;
   left: 50px;
-  top: -34px;
+  top: 0;
   display: block;
   background: url("/img/arrow.png") no-repeat -50px 0;
   width: 45px;
@@ -74,7 +82,7 @@ h1 {
 .btn_input_area label .image_right_arrow {
   position: absolute;
   left: 0;
-  top: -34px;
+  top: 0;
   display: block;
   background: url("/img/arrow.png") no-repeat -50px 0;
   width: 45px;
@@ -83,7 +91,7 @@ h1 {
 .btn_input_area label .image_mac {
   position: absolute;
   left: 0;
-  top: -37px;
+  top: -4px;
   display: block;
   background: url("/img/macintosh.png") no-repeat 0 0;
   width: 50px;
@@ -92,7 +100,7 @@ h1 {
 .btn_input_area label .image_win {
   position: absolute;
   left: 50px;
-  top: -34px;
+  top: 0;
   display: block;
   background: url("/img/windows.png") no-repeat 0 0;
   width: 50px;
