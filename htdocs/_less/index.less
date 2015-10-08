@@ -40,9 +40,7 @@ h1 {
 
   .zeroclipboard-is-active {
     opacity: 1.0;
-    border: 2px solid #428bca;
-    background-color: #fff;
-    color: #357ebd;
+    filter: alpha(opacity=100);
   }
 
   label {
@@ -74,10 +72,6 @@ h1 {
           background-position: -153px 0;
         }
       }
-
-/*      &[name="choice"]:hover {
-        cursor: pointer;
-      }*/
     }
 
     .image_left_arrow {
@@ -104,7 +98,7 @@ h1 {
     .image_mac {
       position: absolute;
       left: 0;
-      top: -4px;
+      top: -3px;
       display: block;
       background: url("/img/macintosh.png") no-repeat 0 0;
       width: 50px;

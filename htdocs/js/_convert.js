@@ -3,6 +3,16 @@ function returnInputPath() {
   return document.getElementById("input_path").value;
 }
 
+//User Agentでデフォルト方向を変更
+(function defaultDirection() {
+  var agent = navigator.userAgent;
+  // Windows のとき
+  if(agent.search(/win/i) !== -1){
+    document.direction.choice[0].checked = false;
+    document.direction.choice[1].checked = true;
+  }
+}());
+
 //どちら方向でパスを変更するか監視
 function checkDerection() {
   var val1 = document.direction.choice[0];
